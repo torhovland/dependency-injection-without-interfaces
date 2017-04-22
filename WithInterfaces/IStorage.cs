@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 
 namespace WithInterfaces
 {
-    internal interface IStorage
+    public interface IStorage
     {
         Task Save();
     }

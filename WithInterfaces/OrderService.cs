@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace WithInterfaces
 {
-    class OrderService : IOrderService
+    public class OrderService : IOrderService
     {
         private readonly IStorage storage;
 

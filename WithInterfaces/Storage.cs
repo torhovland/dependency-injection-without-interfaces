@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace WithInterfaces
 {
-    class Storage : IStorage
+    public class Storage : IStorage
     {
         public async Task Save()
         {

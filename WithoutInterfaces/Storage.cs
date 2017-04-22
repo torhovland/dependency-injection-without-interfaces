@@ -5,9 +5,16 @@ namespace WithoutInterfaces
 {
     public class Storage
     {
-        public async Task Save()
+        private readonly Logger logger;
+
+        public Storage(Logger logger)
         {
-            Console.WriteLine("Writing to a database here...");
+            this.logger = logger;
+        }
+
+        public virtual async Task Save()
+        {
+            logger.Log("Writing to a database here...\n");
             await Task.Delay(100);
         }
     }
